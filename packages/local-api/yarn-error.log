@@ -1,0 +1,42 @@
+Arguments: 
+  /home/francis/.nvm/versions/node/v15.6.0/bin/node /home/francis/.nvm/versions/node/v15.6.0/bin/yarn start
+
+PATH: 
+  /home/francis/.vscode-server/bin/8490d3dde47c57ba65ec40dd192d014fd2113496/bin:/home/francis/.nvm/versions/node/v15.6.0/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/mnt/c/Windows/system32:/mnt/c/Windows:/mnt/c/Windows/System32/Wbem:/mnt/c/Windows/System32/WindowsPowerShell/v1.0/:/mnt/c/Windows/System32/OpenSSH/:/mnt/c/Program Files (x86)/NVIDIA Corporation/PhysX/Common:/mnt/c/Program Files/Git/cmd:/mnt/c/Program Files/nodejs/:/mnt/c/Program Files/Docker/Docker/resources/bin:/mnt/c/ProgramData/DockerDesktop/version-bin:/mnt/c/Users/Francis/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/Francis/AppData/Local/Programs/Microsoft VS Code/bin:/mnt/c/Users/Francis/AppData/Roaming/npm
+
+Yarn version: 
+  1.22.10
+
+Node version: 
+  15.6.0
+
+Platform: 
+  linux x64
+
+Trace: 
+  SyntaxError: /home/francis/webdev/jbook/packages/local-api/package.json: Unexpected token } in JSON at position 136
+      at JSON.parse (<anonymous>)
+      at /home/francis/.nvm/versions/node/v15.6.0/lib/node_modules/yarn/lib/cli.js:1625:59
+      at Generator.next (<anonymous>)
+      at step (/home/francis/.nvm/versions/node/v15.6.0/lib/node_modules/yarn/lib/cli.js:310:30)
+      at /home/francis/.nvm/versions/node/v15.6.0/lib/node_modules/yarn/lib/cli.js:321:13
+
+npm manifest: 
+  {
+    "name": "local-api",
+    "version": "1.0.0",
+    "main": "index.js",
+    "scripts": {
+      "start": "tsc --watch --preserveWatchOutput",
+    },
+    "license": "MIT",
+    "devDependencies": {
+      "typescript": "^4.1.3"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile

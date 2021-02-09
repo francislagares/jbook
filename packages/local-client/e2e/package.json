@@ -1,0 +1,11 @@
+{
+  "name": "e2e",
+  "version": "1.0.0",
+  "description": "Cypress e2e testing",
+  "main": "index.js",
+  "author": "Francis Lagares",
+  "license": "MIT",
+  "devDependencies": {
+    "cypress": "^6.3.0"
+  }
+}
