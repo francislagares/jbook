@@ -8,6 +8,7 @@ import {
   IFetchCellsAction,
   IFetchCellsCompleteAction,
   IFetchCellsErrorAction,
+  ISaveCellsErrorAction,
 } from '../interfaces';
 
 export enum ActionType {
@@ -20,6 +21,7 @@ export enum ActionType {
   FETCH_CELLS = 'fetch_cells',
   FETCH_CELLS_COMPLETE = 'fetch_cells_complete',
   FETCH_CELLS_ERROR = 'fetch_cells_error',
+  SAVE_CELLS_ERROR = 'save_cells_error',
 }
 
 export type Action =
@@ -31,4 +33,5 @@ export type Action =
   | IBundleCompleteAction
   | IFetchCellsAction
   | IFetchCellsCompleteAction
-  | IFetchCellsErrorAction;
+  | IFetchCellsErrorAction
+  | ISaveCellsErrorAction;

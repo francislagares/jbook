@@ -108,3 +108,8 @@ export interface IFetchCellsErrorAction {
   type: ActionType.FETCH_CELLS_ERROR;
   payload: string;
 }
+
+export interface ISaveCellsErrorAction {
+  type: ActionType.SAVE_CELLS_ERROR;
+  payload: string;
+}
