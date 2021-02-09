@@ -5,6 +5,9 @@ import {
   IUpdateCellAction,
   IBundleStartAction,
   IBundleCompleteAction,
+  IFetchCellsAction,
+  IFetchCellsCompleteAction,
+  IFetchCellsErrorAction,
 } from '../interfaces';
 
 export enum ActionType {
@@ -14,6 +17,9 @@ export enum ActionType {
   UPDATE_CELL = 'update_cell',
   BUNDLE_START = 'bundle_start',
   BUNDLE_COMPLETE = 'bundle_complete',
+  FETCH_CELLS = 'fetch_cells',
+  FETCH_CELLS_COMPLETE = 'fetch_cells_complete',
+  FETCH_CELLS_ERROR = 'fetch_cells_error',
 }
 
 export type Action =
@@ -22,4 +28,7 @@ export type Action =
   | IInsertCellAfterAction
   | IUpdateCellAction
   | IBundleStartAction
-  | IBundleCompleteAction;
+  | IBundleCompleteAction
+  | IFetchCellsAction
+  | IFetchCellsCompleteAction
+  | IFetchCellsErrorAction;

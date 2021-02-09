@@ -94,3 +94,17 @@ export interface IBundleCompleteAction {
     };
   };
 }
+
+export interface IFetchCellsAction {
+  type: ActionType.FETCH_CELLS;
+}
+
+export interface IFetchCellsCompleteAction {
+  type: ActionType.FETCH_CELLS_COMPLETE;
+  payload: ICell[];
+}
+
+export interface IFetchCellsErrorAction {
+  type: ActionType.FETCH_CELLS_ERROR;
+  payload: string;
+}
