@@ -10,6 +10,8 @@ export const serve = (
   useProxy: boolean
 ) => {
   const app = express();
+  
+  app.use(createCellsRouter(filename, dir));
 
   if(useProxy) {
     app.use(createProxyMiddleware({
@@ -19,11 +21,9 @@ export const serve = (
       })
     );
   } else {
-    const packagePath = require.resolve('local-client/build/index.html');
+    const packagePath = require.resolve('@jsnote-francis/local-client/build/index.html');
     app.use(express.static(path.dirname(packagePath)));
   }
-
-  app.use(createCellsRouter(filename, dir))
 
   return new Promise<void>((resolve, reject) => {
     app.listen(port, resolve).on('error', reject);
